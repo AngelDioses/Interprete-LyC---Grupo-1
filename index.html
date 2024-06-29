@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intérprete - Grupo 1 - LyC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Intérprete - Grupo 1 - LyC</h1>
+    </header>
+    <div class="examples-bar">
+        <button onclick="loadExample(1)">Operaciones Básicas</button>
+        <button onclick="loadExample(2)">Operaciones con Paréntesis</button>
+        <button onclick="loadExample(3)">Asignación y Suma</button>
+        <button onclick="loadExample(4)">Variables Dependientes</button>
+        <button onclick="loadExample(5)">Manejo de Errores</button>
+    </div>
+    <div class="container">
+        <div class="editor-section">
+            <textarea id="codeInput" placeholder="Escribe tu código aquí..."></textarea>
+            <div class="buttons">
+                <button id="runButton">Ejecutar</button>
+                <button id="copyButton">Copiar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <div id="output">Resultado aparecerá aquí...</div>
+        </div>
+    </div>
+    <script src="interpreter.js"></script>
+</body>
+</html>
