@@ -51,7 +51,7 @@ function evaluateExpression(expr, variables) {
     try {
         return new Function(`return ${replacedExpr}`)();
     } catch {
-        throw new Error(`Invalid expression: ${expr}`);
+        throw new Error(`Expresión Inválida: ${expr}`);
     }
 }
 
